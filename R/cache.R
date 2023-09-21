@@ -24,9 +24,13 @@ cache_op = function( cache, remote_target ) {
 #' @importFrom Rsamtools TabixFile
 #' @param cache An instance of BiocFileCache
 #' @param build character(1) defaults to "hg38"
+#' @note First invocation on a given R deployment will
+#' a) request that a cache be built if BiocFileCache has
+#' never been used, b) populate the cache with ~600MB
+#' of bgzipped tabix-indexed variant-level data.
 #' @examples
 #' ca = BiocFileCache::BiocFileCache()
-#' txf = get_alphamis_txf(ca)
+#' txf = get_alphamis_txf(ca) # will download if data are not already cached
 #' Rsamtools::yieldSize(txf) = 10L
 #' read.delim(text=Rsamtools::scanTabix(txf)[[1]], h=FALSE) 
 #' @export

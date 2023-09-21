@@ -16,9 +16,15 @@ get_alphamis_txf(cache = BiocFileCache::BiocFileCache(), build = "hg38")
 obtain AlphaMissense TabixFile from cache, after
 retrieving the relevant resource if not present there
 }
+\note{
+First invocation on a given R deployment will
+a) request that a cache be built if BiocFileCache has
+never been used, b) populate the cache with ~600MB
+of bgzipped tabix-indexed variant-level data.
+}
 \examples{
 ca = BiocFileCache::BiocFileCache()
-txf = get_alphamis_txf(ca)
+txf = get_alphamis_txf(ca) # will download if data are not already cached
 Rsamtools::yieldSize(txf) = 10L
 read.delim(text=Rsamtools::scanTabix(txf)[[1]], h=FALSE) 
 }
