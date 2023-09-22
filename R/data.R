@@ -7,3 +7,8 @@
 #' data(amentgr)
 #' amentgr[1:5,1:4]
 "amentgr"
+
+#' a vector of column names for AlphaMissense tables
+#' @docType data
+#' @format character vector
+"amnames"
