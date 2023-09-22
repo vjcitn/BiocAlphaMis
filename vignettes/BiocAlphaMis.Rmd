@@ -51,7 +51,7 @@ df10
 
 We used the EBI GWAS catalog and searched for "sthma"
 in the `MAPPED_TRAIT` field.  The resulting
-records are in a GRanges instance.
+records are in a GRanges instance, accessible via `data(amentgr)`.
 
 ```{r lkda}
 data(amentgr)
