@@ -1,4 +1,4 @@
-# BiocAlphaMis
+# ~~BiocAlphaMis~~
 
 ~~This package provides elementary interfaces to AlphaMissense resources, using BiocFileCache, Rsamtools, and GenomicRanges.~~
 
