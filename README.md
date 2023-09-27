@@ -1,6 +1,6 @@
 # BiocAlphaMis
 
-~~This package provides elementary interfaces to AlphaMissense resources, using BiocFileCache, Rsamtools, and GenomicRanges.
+~~This package provides elementary interfaces to AlphaMissense resources, using BiocFileCache, Rsamtools, and GenomicRanges.~~
 
 The vignette demonstrates how a collection of several thousand records
 on GWAS hits for asthma can be filtered to SNVs that are "likely pathogenic":~~
