@@ -1,5 +1,7 @@
 # ~~BiocAlphaMis~~
 
+This repo/package will be removed.  Please see [AlphaMissense](https://mtmorgan.github.io/AlphaMissense/index.html)
+
 ~~This package provides elementary interfaces to AlphaMissense resources, using BiocFileCache, Rsamtools, and GenomicRanges.~~
 
 The vignette demonstrates how a collection of several thousand records
